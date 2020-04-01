@@ -31,4 +31,10 @@ public enum Planeta {
         return this.radio;
     }
 
+    public double gravedadSuperficial(){
+        return G * getMasa() / Math.pow(getRadio(), 2);
+    }
+
+
+
 }
