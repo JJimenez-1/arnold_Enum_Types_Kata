@@ -1,8 +1,8 @@
-package org.foobarspam.arnoldEnumType.arnoldEnumType.test;
+package edu.elsmancs.arnoldEnumType.arnoldEnumType.test;
 
 import static org.assertj.core.api.Assertions.assertThat;
 
-import org.foobarspam.arnoldEnumType.logica.Planeta;
+import edu.elsmancs.arnoldEnumType.Planeta;
 import org.junit.BeforeClass;
 import org.junit.Test;
 
