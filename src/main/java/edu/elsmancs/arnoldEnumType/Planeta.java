@@ -43,7 +43,7 @@ public enum Planeta {
         return G * getMasa() / Math.pow(getRadio(), 2);
     }
     public double gravedadSuperficial(Planeta planeta){
-        return G * getMasa() / Math.pow(getRadio(), 2);
+        return G * planeta.getMasa() / Math.pow(planeta.getRadio(), 2);
     }
 
     public static EnumSet<Planeta> getPlanetasTerrestres(){

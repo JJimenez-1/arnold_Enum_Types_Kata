@@ -1,10 +1,12 @@
-package edu.elsmancs.arnoldEnumType.arnoldEnumType.test;
+package edu.elsmancs.arnoldEnumType;
 
 import static org.assertj.core.api.Assertions.assertThat;
+import static org.junit.Assert.assertEquals;
 
 import edu.elsmancs.arnoldEnumType.Planeta;
 import org.junit.BeforeClass;
 import org.junit.Test;
+
 
 public class ArnoldEnumTypesTest {
 
