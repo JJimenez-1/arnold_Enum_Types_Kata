@@ -4,9 +4,9 @@ import java.util.EnumSet;
 
 public enum Planeta {
 
-    MERCURY(3.303e+23, 2.4397e+6),
-    VENUS(4.869e+24, 6.0518e6),
-    EARTH(5.976e+24, 6.37814e6),
+    MERCURY (3.303e+23, 2.4397e+6),
+    VENUS (4.869e+24, 6.0518e6),
+    EARTH (5.976e+24, 6.37814e6),
     MARS    (6.421e+23, 3.3972e6),
     JUPITER (1.9e+27,   7.1492e7),
     SATURN  (5.688e+26, 6.0268e7),
@@ -31,7 +31,11 @@ public enum Planeta {
         return this.radio;
     }
 
-    public double gravedadSuperficial(){
+    public double masaHumano(double peso) {
+        return peso / this.gravedadSuperficial(EARTH);
+    }
+
+    public double gravedadSuperficial(Planeta planeta){
         return G * getMasa() / Math.pow(getRadio(), 2);
     }
 
