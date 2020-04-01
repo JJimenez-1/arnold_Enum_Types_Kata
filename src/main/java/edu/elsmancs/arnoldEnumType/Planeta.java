@@ -35,8 +35,12 @@ public enum Planeta {
         return G * getMasa() / Math.pow(getRadio(), 2);
     }
 
-    public static EnumSet<Planeta> getPlanetaTerrestres(){
+    public static EnumSet<Planeta> getPlanetasTerrestres(){
         return EnumSet.range(MERCURY, MARS);
+    }
+
+    public static EnumSet<Planeta> getGigantesGaseosos() {
+        return EnumSet.complementOf(getPlanetasTerrestres());
     }
 
 }
