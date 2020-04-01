@@ -35,6 +35,8 @@ public enum Planeta {
         return G * getMasa() / Math.pow(getRadio(), 2);
     }
 
-
+    public static EnumSet<Planeta> getPlanetaTerrestres(){
+        return EnumSet.range(MERCURY, MARS);
+    }
 
 }
